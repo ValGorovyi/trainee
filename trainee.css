@@ -1,0 +1,42 @@
+.progress{
+    position: relative;
+    overflow: hidden;
+    height: 20px;  
+    border: 1px solid #333333; 
+    border-radius: 18px;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .3);
+    background: linear-gradient(to bottom, #353535, #979797)
+}
+.progress:before {
+    position: absolute;
+    content: '';
+    height: 18px;
+    width: 20%;
+    background: linear-gradient(0deg, #55bdfd 15%, #0690f2 50%, #55bdfd 85%);
+    border: 1px solid #008df2; 
+    border-radius: 18px 0 0 18px;
+    box-shadow: 2px 0 2px 0 rgba(0, 0, 0, .6);
+}
+hr{
+    margin: 0;
+    padding: 0;
+    width: 1450%;
+}
+.table{
+    width: 100%;
+    display: table;
+    font-size: 12px;
+}
+
+.tmain{
+    display: table-row;
+}
+
+.tcell{
+    width: 11.1%;
+    display: table-cell;
+    text-align: left;
+}
+.radio-input{
+    background-color: silver;
+}
