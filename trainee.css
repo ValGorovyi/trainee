@@ -37,6 +37,38 @@ hr{
     display: table-cell;
     text-align: left;
 }
-.radio-input{
-    background-color: silver;
+.form_radio {
+	margin-bottom: 10px;
+}
+.form_radio input[type=radio] {
+	display: none;
+}
+.form_radio label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 10px;
+	margin-right: 0;
+
+	user-select: none;
+    background-color: orange;
+    border-radius: 30%;
+}
+.form_radio label::before {
+	content: "";
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background: black;
+    opacity: 0.2;
+    border-radius: 30%;
+}
+ 
+/* Checked */
+.form_radio input[type=radio]:checked + label {
+	background: silver;
+    opacity: 1;
 }
